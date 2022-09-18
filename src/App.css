@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.App {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+/* PARTE DEL FORMULARIO */
+.grid-second {
+  background: white;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.grid-second h1 {
+  text-align: center;
+  font-family: 'Bungee Spice', cursive;
+  text-shadow: 3px 3px 3px black;
+}
+
+.form {
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.input-container {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.input-container input {
+  font-family: 'Varela Round', sans-serif;
+
+  font-size: 20px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background: #b9bdbd;
+  padding: 5px;
+}
+
+.input-container label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn {
+
+  font-size: 18px;
+  font-family: Arial;
+  width: 70%;
+  height: 50px;
+  border-width: 1px;
+  color: #3a8a9e;
+  border-color: #d6bcd6;
+  font-weight: bold;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0px 0px 6px 2px #899599;
+  text-shadow: 0px 1px 0px #e1e2ed;
+  background: linear-gradient(#ededed, #bab1ba);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: linear-gradient(#bab1ba, #ededed);
+}
+
+/* PARTE DE LA LISTA */
+.grid-first {
+  background-image: url("https://images.unsplash.com/photo-1524169358666-79f22534bc6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  padding-top: 20px;
+}
+
+.grid-first h1 {
+  font-family: 'Bungee Spice', cursive;
+  text-align: center;
+  text-shadow: 5px 5px 3px black;
+}
+
+.list-cards {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card-user {
+  font-family: 'Play', sans-serif;
+  width: 80%;
+  height: 140px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  align-items: center;
+  border: 5px double black;
+  background-image: radial-gradient(circle, #3e2744, #433158, #443d6e, #3c4a85, #25589b);
+  box-shadow: -2px 3px 8px 5px black;
+  border-radius: 5px;
+}
+
+.Info-user {
+  padding-left: 30px;
+}
+
+.container-btn button {
+  background: #b9bdbd;
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.Email {
+  padding: 10px;
+  font-size: 20px;
+
+}
+
+.Name {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 5px;
+  text-shadow: 1px 0px 4px white;
+}
+
+.Alert{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right:850px;
+  top: 300px;
+  background: white;
+  z-index: 2;
+  border-radius: 10%;
+}
+.Alert p{
+  font-size: 20px;
+}
+
+@media (max-width: 950px){
+  .App{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .grid-first {
+    background-image: url("https://images.unsplash.com/photo-1524169358666-79f22534bc6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    
+    padding-top: 20px;
+    height: 600px;
+  }
+  .grid-second {
+    background: white;
+    height: 100%;
+    padding-top: 20px;
+  }
+  
+}
